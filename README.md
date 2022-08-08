@@ -30,7 +30,10 @@ Expected Output:
 # Declaring Types
 
 ```
-let database = CVS.parse(file,{id: 'number',ingredients: 'array'});
+let file = `id,name,ingredients,instructions
+1,spaghetti,"pasta, ground beef, spaghetti sauce","insert instructions here"
+2,grilled cheese,"bread, cheese, butter","insert instructions here"`;
+let database = CSV.parse(file,{id: 'number',ingredients: 'array'});
 ```
 
 Excepted Output:
